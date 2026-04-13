@@ -1,2 +1,2 @@
-# Arina Takina
+# ARINA TAKINA
 Визажист Горно-Алтайск
