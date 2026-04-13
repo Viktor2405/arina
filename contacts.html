@@ -94,18 +94,19 @@
                 </div>
 
                 <div class="map-section">
-                    <div class="map-container" style="background: url('https://static-maps.yandex.ru/1.x/?lang=ru_RU&ll=85.9567,51.9575&z=16&l=map&size=650,400&pt=85.9567,51.9575,pm2rdl') center/cover; border-radius: 20px; min-height: 300px; display: flex; align-items: flex-end;">
-                        <div class="map-overlay" style="position: relative; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,0.95);">
-                            <h3>📍 Горно-Алтайск</h3>
-                            <p><strong>Студия Chach</strong><br>Коммунистический пр-т, 3, 1 этаж</p>
-                            <p>Приём по предварительной записи<br>Выезд в любой район</p>
-                            <p><a href="https://yandex.ru/maps/-/CPrda4KF" target="_blank" style="color:#8b7355;">Открыть в Яндекс.Картах</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="map-container" style="position: relative; border-radius: 20px; overflow: hidden; min-height: 300px;">
+        <!-- Фоновая картинка -->
+        <img src="https://static-maps.yandex.ru/1.x/?lang=ru_RU&ll=85.9567,51.9575&z=16&l=map&size=650,400&pt=85.9567,51.9575,pm2rdl" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" alt="Карта">
+        
+        <!-- Оверлей с информацией (теперь поверх картинки и кликабельный) -->
+        <div class="map-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); padding: 20px; z-index: 2; pointer-events: auto;">
+            <h3 style="margin-top: 0;">📍 Горно-Алтайск</h3>
+            <p><strong>Студия Chach</strong><br>Коммунистический пр-т, 3, 1 этаж</p>
+            <p>Приём по предварительной записи<br>Выезд в любой район</p>
+            <p><a href="https://yandex.ru/maps/-/CPrda4KF" target="_blank" style="color:#8b7355; text-decoration: underline;">Открыть в Яндекс.Картах</a></p>
         </div>
-    </section>
+    </div>
+</div>
 
     <footer class="footer">
         <div class="container">
